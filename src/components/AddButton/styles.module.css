@@ -1,0 +1,20 @@
+.addButton{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #49ccf9;
+    color: white;
+    font-weight: bold;
+    font-size: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.addButton:hover{
+    background-color: #f7d547;
+}

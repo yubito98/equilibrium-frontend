@@ -1,0 +1,29 @@
+.categoryCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 250px;
+    width: 250px;
+    padding: 20px;
+    box-shadow: 0 10px 25px #f7d54780;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.categoryCard:hover{
+    background-color: #49ccf9;
+    color: white;
+    transform: scale(1.2);
+    box-shadow: 0 10px 25px #49ccf9;
+}
+
+
+
+.categoryCard img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
