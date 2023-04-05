@@ -15,9 +15,6 @@ const UserId = () => {
         getCategories(setCategories)
     },[])
 
-
-
-
     return(
         <>
             <Header/>
@@ -28,7 +25,7 @@ const UserId = () => {
                         categories ? (
                             categories.map(item =>(
                                 <CategoryCard
-                                key={item.name}
+                                key={item.title}
                                 title={item.title}
                                 icon={item.image}
                                 />

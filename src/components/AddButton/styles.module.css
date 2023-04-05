@@ -18,3 +18,36 @@
 .addButton:hover{
     background-color: #f7d547;
 }
+
+
+.modalInactive{
+    display: none;
+}
+
+.modal{
+    display: block;
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+}
+
+.modal form{
+    background-color: white;
+    position: relative;
+    height: 250px;
+    position: sticky;
+    margin-top: 100px;
+    top: 50px;
+}
+
+.modal form span{
+    position: absolute;
+    top:0;
+    right: 20px;
+}

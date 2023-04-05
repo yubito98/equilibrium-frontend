@@ -21,6 +21,8 @@ const SignUp = () =>{
         }));
       };
 
+  
+
 
     return(
         <>
