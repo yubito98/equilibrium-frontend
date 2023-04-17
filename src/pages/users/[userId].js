@@ -5,11 +5,14 @@ import { useRouter } from "next/router"
 import { getCategories } from "./functions";
 import { useState, useEffect } from "react";
 
+
 const UserId = () => {
 
     const {query:{userId}} = useRouter();
-
     const [categories, setCategories] = useState(null);
+
+    
+
 
     useEffect(()=>{
         getCategories(setCategories)
@@ -25,9 +28,10 @@ const UserId = () => {
                         categories ? (
                             categories.map(item =>(
                                 <CategoryCard
-                                key={item.title}
-                                title={item.title}
+                                key={item.name}
+                                name={item.name}
                                 icon={item.image}
+                                editButton={() => {window.location.href=`/users/category/${item.id}`}}
                                 />
                             ))
                         ): "There is no data"

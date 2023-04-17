@@ -30,14 +30,20 @@ const SignUp = () =>{
             <div className="container">
                 <h1 className={styles.title}>Sign Up</h1>
                 <form className='form-primary' onSubmit={handleSubmit}>
-                    <input type="text" 
+                    <input 
+                    type="text" 
                     name="name" 
                     placeholder="Ingresar Nombre" 
                     onChange={handleInputChange} />
                     <input 
                     type="text" 
-                    name="country" 
-                    placeholder="Ingresar Pais" 
+                    name="correo" 
+                    placeholder="Ingresar Email" 
+                    onChange={handleInputChange} />
+                    <input 
+                    type="password" 
+                    name="password" 
+                    placeholder="Ingresar contraseña" 
                     onChange={handleInputChange} />
                     <button 
                     className="btn-primary" 

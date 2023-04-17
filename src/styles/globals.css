@@ -5,6 +5,12 @@ body{
     position: relative;
 }
 
+/* TIPOGRAFY STYLES */
+h1{
+    font-size: 50px;
+}
+/* / TIPOGRAFY STYLES */
+
 
 /* CONTAINER STYLES */
 
@@ -57,6 +63,7 @@ body{
     padding: 1em 1.5em;
     text-decoration: none;
     transition: .3s;
+    cursor: pointer;
 }
 
 .btn-secondary:hover{
@@ -74,6 +81,28 @@ body{
 .btn-close:hover{
     color: red;
     cursor: pointer;
+}
+
+.btn-delete{
+    font-weight: bold;
+    background-color: #f76e68;
+    box-shadow: 0 3px 10px #f76e68;
+    color: white;
+    border: none;
+    border-radius: 9px;
+    padding: 1em 1.5em;
+    text-decoration: none;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.btn-delete:hover{
+    background-color: red;
+}
+
+a{
+    text-decoration: none;
+    color:#000;
 }
 
 /* END BUTTON STYLES */
@@ -95,5 +124,10 @@ body{
     border: none;
     outline: none;
     border-bottom: 1px solid #f7d547;
+    transition:0.3s;
+}
+
+.form-primary input:focus{
+    border-bottom: 1px solid #fd71af;
 }
 /* END FORM STYLES */

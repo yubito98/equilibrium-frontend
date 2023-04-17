@@ -9,13 +9,13 @@
     box-shadow: -5px 10px 20px rgba(0, 0, 0, 0.2);
     border-radius: 16px;
     cursor: pointer;
-    transition: .5s;
+    transition: .3s;
 }
 
 .categoryCard:hover{
     background-color: #49ccf9;
     color: white;
-    transform: scale(1.2);
+    transform: scale(1.1);
     box-shadow: 0 10px 25px #49ccf9;
 }
 
@@ -26,4 +26,14 @@
     height: 100px;
     object-fit: cover;
     border-radius: 50%;
+}
+
+.categoryCard h4{
+    margin-bottom: 50px;
+}
+
+.categoryCardButtons{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
 }

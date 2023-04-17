@@ -1,5 +1,10 @@
 import Head from 'next/head'
 import Header from '@/components/Header'
+import styles from '../styles/home.module.css'
+import Link from 'next/link'
+import 'bootstrap/dist/css/bootstrap-grid.min.css'
+import heroImage from '../assets/customer-support.avif'
+
 
 export default function Home() {
   return (
@@ -11,8 +16,20 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header/>
-      <main>
-        <h1>Equilibrium.com</h1>
+      <main className={styles.hero} >
+        <section className={`${styles.heroContainer}`}>
+          <div className='row'>
+            <div className={`col-12 col-md-6 ${styles.heroContent}`}>
+              <h1>Equilibrium.com</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae erat diam. Aenean ligula sapien, suscipit in suscipit a, luctus at nibh. Ut mauris neque, pharetra at lobortis sit amet, iaculis eget leo. Maecenas sit amet venenatis quam. Cras a nisl tristique, ultrices mi at, sagittis arcu. Nulla sed nisi nec nisl congue porttitor. Sed lacinia tristique dapibus.</p>
+              <Link className='btn-secondary'  href="/sign-up" >Registrarse</Link>
+            </div>
+            <div className={`col-12 col-md-6 ${styles.heroImage}`}>
+              <img src={heroImage.src} />
+            </div>
+          </div>
+        </section>
+        
       </main>
     </>
   )

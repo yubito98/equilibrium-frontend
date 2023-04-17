@@ -7,7 +7,9 @@ const Header = () =>{
 
     return(
         <header className={styles.header} >
-            <h4>Equilibrium.com</h4>
+            <h4>
+                <Link href='/' >Equilibrium.com</Link>
+            </h4>
             <div className={styles.menu}>
                 <ul>
                     <li>Home</li>

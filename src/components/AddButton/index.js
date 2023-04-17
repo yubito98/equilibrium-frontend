@@ -32,17 +32,16 @@ import axios from "axios";
                 <form onSubmit={handleSubmit} className="form-primary">
                     <span onClick={() => setModal(false)} className="btn-close">x</span>
                     <h3>Crear una nueva categoria </h3>
-                    <label for="icono">Seleciona un icono</label>
                     <input 
                     type="text" 
-                    id="icono"
-                    name="image"
+                    name="name" 
+                    placeholder="Ingresar el nombre de la categoria" 
                     onChange={handleInput}
                     />
+                    <label>Seleciona un icono</label>
                     <input 
                     type="text" 
-                    name="title" 
-                    placeholder="Ingresar el nombre de la categoria" 
+                    name="image"
                     onChange={handleInput}
                     />
                     <button type="submit" className="btn-primary">Crear</button>
